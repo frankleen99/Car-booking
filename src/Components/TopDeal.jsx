@@ -82,7 +82,7 @@ const TopDeal = () => {
       {/* Top deal button section ends */}
 
       {/* Section for top section cards */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-8 mt-2 justify-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 lg:gap-8 mt-2 justify-center">
         {filteredCars.map((car) => (
           <div
             key={car.id}

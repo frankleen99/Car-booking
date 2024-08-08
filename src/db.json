@@ -114,16 +114,60 @@
     "buyPage" : [
       {
         "id": 1,
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK48YEEmDAun1G9C6DWksQ9adhDkE3fCb1wQ&s"
+        "name": "Toyota Camry 2022",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK48YEEmDAun1G9C6DWksQ9adhDkE3fCb1wQ&s",
+        "price": "$12000"
       },
       {
         "id": 2,
-        "image": "https://hips.hearstapps.com/hmg-prod/images/2021-honda-civic-mmp-1-1595005323.jpg"
+        "name": "Honda Civic 2021",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/2021-honda-civic-mmp-1-1595005323.jpg",
+        "price": "$13500"
       },
       {
-        "id": 2,
-        "image": ""
+        "id": 3,
+        "name":"Nissan Altima 2020",
+        "image": "https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/3003/",
+        "price": "$18000"
+      },
+      {
+        "id": 4,
+        "name":"Hyundai Sonata 2021",
+        "image": "https://images.pexels.com/photos/12206292/pexels-photo-12206292.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price":"$20000"
       }
+    ],
+    "RepairPage": [
+      {
+        "id": "1",
+        "image": "https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price":"$49.99"
+      },
+      {
+        "id": "2",
+        "image": "https://images.pexels.com/photos/4022545/pexels-photo-4022545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price":"$199.99"
+      }, 
+      {
+        "id": "3",
+        "image": "https://images.pexels.com/photos/5835363/pexels-photo-5835363.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price":"$29.99"
+      }, 
+      {
+        "id": "4",
+        "image": "https://images.pexels.com/photos/244553/pexels-photo-244553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price":"$29.99"
+      }, 
+      {
+        "id": "5",
+        "image": "",
+        "price":"299.99"
+      }, 
+      {
+        "id": "6",
+        "image": "",
+        "price":"$99.99"
+      }    
     ]
   }
   

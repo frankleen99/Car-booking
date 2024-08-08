@@ -164,12 +164,8 @@ function RentPage() {
           <div className="container mx-auto flex items-center justify-between">
             <p>&copy; 2024 Car Rental. All rights reserved.</p>
             <nav className="flex items-center gap-4">
-              <Link to="/">
-                <a className="hover:text-primary-foreground/80">Home</a>
-              </Link>
-              <Link to="/help">
-                <a className="hover:text-primary-foreground/80">Help</a>
-              </Link>
+            <Link to="/" className="hover:underline hover:-red-600 underline-offset-4">Home</Link>
+            <Link to="/help" className="hover:underline hover:-red-600 underline-offset-4">Help</Link>
             </nav>
           </div>
         </footer>

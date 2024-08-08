@@ -26,7 +26,7 @@ function Help() {
             <div className="bg-card p-6 rounded-lg shadow">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions</h2>
+                  <h2 className="text-2xl font-bold mb-4 text-red-600">Frequently Asked Questions</h2>
                   <div className="space-y-4">
                     <div>
                       <h3 className="text-lg font-medium mb-2">How do I rent a car?</h3>
@@ -52,7 +52,7 @@ function Help() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+                  <h2 className="text-2xl font-bold mb-4 text-red-600">Contact Us</h2>
                   <div className="space-y-4">
                     <div>
                       <h3 className="text-lg font-medium mb-2">Phone</h3>

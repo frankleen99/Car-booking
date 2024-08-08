@@ -72,7 +72,7 @@ const Vehicles = () => {
       </div>
       <div className="text-center my-4">
         <p className="text-red-600 font-medium text-sm">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur, reprehenderit!
+          With the click of a button you can find a car that matches your taste
         </p>
       </div>
       <div className="justify-center items-center shadow-lg rounded-md bg-slate-100 md:mx-[20%] lg:mx-[20%] mx-[10%] md:h-[300px] lg:h-[300px] h-[470px]">

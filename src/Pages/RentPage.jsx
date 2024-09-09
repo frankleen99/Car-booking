@@ -1,7 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function RentPage() {
+  const [cars, setCars] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const jsonEndpoint = `http://localhost:8000/RepairPage`;
+
+    fetch(jsonEndpoint)
+      .then((res) => res.json())
+      .then((data) => {
+        setCars(data);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.log("Error fetching data", error);
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <div>
       <div className="flex flex-col min-h-screen">
@@ -26,53 +49,27 @@ function RentPage() {
               <h1 className="text-4xl font-bold mb-6">Rent a Car</h1>
               <div className="bg-card p-6 rounded-lg shadow">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h2 className="text-2xl font-bold mb-4">Featured Cars</h2>
-                    <div className="space-y-4">
-                      <div className="bg-muted p-4 rounded-lg">
+                <div>
+                  <h2 className="text-2xl font-bold mb-4">Featured Cars</h2>
+                  <div className="space-y-4">
+                    {cars.slice(0, 2).map((car, index) => (
+                      <div key={index} className="bg-muted p-4 rounded-lg">
                         <img
-                          src="/placeholder.svg"
-                          alt="Car 1"
+                          src={car.image}
+                          alt={car.name}
                           className="rounded-lg mb-4"
                         />
-                        <h3 className="text-lg font-medium mb-2">
-                          2022 Toyota Camry
-                        </h3>
-                        <p className="text-muted-foreground mb-4">$25,000</p>
+                        <h3 className="text-lg font-medium mb-2">{car.name}</h3>
+                        <p className="text-muted-foreground mb-4">
+                          {car.price}
+                        </p>
                         <button className="p-3 bg-red-600 px-9 text-white rounded-md hover:bg-red-800 transition-colors duration-300">
-                          Rent Now
+                          Buy Now
                         </button>
                       </div>
-                      <div className="bg-muted p-4 rounded-lg">
-                        <img
-                          src="/placeholder.svg"
-                          alt="Car 2"
-                          className="rounded-lg mb-4"
-                        />
-                        <h3 className="text-lg font-medium mb-2">
-                          2021 Honda Civic
-                        </h3>
-                        <p className="text-muted-foreground mb-4">$20,000</p>
-                        <button className="p-3 bg-red-600 px-9 text-white rounded-md hover:bg-red-800 transition-colors duration-300">
-                          Rent Now
-                        </button>
-                      </div>
-                      <div className="bg-muted p-4 rounded-lg">
-                        <img
-                          src="/placeholder.svg"
-                          alt="Car 3"
-                          className="rounded-lg mb-4"
-                        />
-                        <h3 className="text-lg font-medium mb-2">
-                          2023 Ford Mustang
-                        </h3>
-                        <p className="text-muted-foreground mb-4">$35,000</p>
-                        <button className="p-3 bg-red-600 px-9 text-white rounded-md hover:bg-red-800 transition-colors duration-300">
-                          Rent Now
-                        </button>
-                      </div>
-                    </div>
+                    ))}
                   </div>
+                </div>
                   <div>
                     <h2 className="text-2xl font-bold mb-4">Browse All Cars</h2>
                     <div className="space-y-4">
@@ -164,8 +161,18 @@ function RentPage() {
           <div className="container mx-auto flex items-center justify-between">
             <p>&copy; 2024 Car Rental. All rights reserved.</p>
             <nav className="flex items-center gap-4">
-            <Link to="/" className="hover:underline hover:-red-600 underline-offset-4">Home</Link>
-            <Link to="/help" className="hover:underline hover:-red-600 underline-offset-4">Help</Link>
+              <Link
+                to="/"
+                className="hover:underline hover:-red-600 underline-offset-4"
+              >
+                Home
+              </Link>
+              <Link
+                to="/help"
+                className="hover:underline hover:-red-600 underline-offset-4"
+              >
+                Help
+              </Link>
             </nav>
           </div>
         </footer>

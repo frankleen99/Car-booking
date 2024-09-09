@@ -6,7 +6,7 @@ function BuyPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const jsonEndpoint = 'http://localhost:8000/buyPage';
+    const jsonEndpoint = `http://localhost:8000/buyPage`;
 
     fetch(jsonEndpoint)
       .then((res) => res.json())
@@ -58,7 +58,9 @@ function BuyPage() {
                           className="rounded-lg mb-4"
                         />
                         <h3 className="text-lg font-medium mb-2">{car.name}</h3>
-                        <p className="text-muted-foreground mb-4">{car.price}</p>
+                        <p className="text-muted-foreground mb-4">
+                          {car.price}
+                        </p>
                         <button className="p-3 bg-red-600 px-9 text-white rounded-md hover:bg-red-800 transition-colors duration-300">
                           Buy Now
                         </button>
@@ -67,7 +69,9 @@ function BuyPage() {
                   </div>
                 </div>
                 <div>
-                  <h2 className="text-2xl font-bold mb-4 text-red-600">Browse All Cars</h2>
+                  <h2 className="text-2xl font-bold mb-4 text-red-600">
+                    Browse All Cars
+                  </h2>
                   <div className="space-y-4">
                     {cars.slice(2).map((car, index) => (
                       <div key={index} className="bg-muted p-4 rounded-lg">
@@ -77,7 +81,9 @@ function BuyPage() {
                           className="rounded-lg mb-4"
                         />
                         <h3 className="text-lg font-medium mb-2">{car.name}</h3>
-                        <p className="text-muted-foreground mb-4">{car.price}</p>
+                        <p className="text-muted-foreground mb-4">
+                          {car.price}
+                        </p>
                         <button className="p-3 bg-red-600 px-9 text-white rounded-md hover:bg-red-800 transition-colors duration-300">
                           Buy Now
                         </button>
@@ -97,16 +103,23 @@ function BuyPage() {
                 <div>
                   <h3 className="text-xl font-bold mb-4">Financing</h3>
                   <p className="text-muted-foreground mb-4">
-                    We offer a variety of financing options to help you purchase your dream car. Our team can work with you to find the best loan terms and rates.
+                    We offer a variety of financing options to help you purchase
+                    your dream car. Our team can work with you to find the best
+                    loan terms and rates.
                   </p>
-                  <Link to="#" className="bg-primary text-primary-foreground px-4 py-2 hover:underline hover:-red-600 underline-offset-4">
+                  <Link
+                    to="#"
+                    className="bg-primary text-primary-foreground px-4 py-2 hover:underline hover:-red-600 underline-offset-4"
+                  >
                     Learn More
                   </Link>
                 </div>
                 <div>
                   <h3 className="text-xl font-bold mb-4">Trade-In</h3>
                   <p className="text-muted-foreground mb-4">
-                    Looking to trade in your current vehicle? We offer competitive trade-in values and can apply the credit towards your new car purchase.
+                    Looking to trade in your current vehicle? We offer
+                    competitive trade-in values and can apply the credit towards
+                    your new car purchase.
                   </p>
                 </div>
               </div>
@@ -118,8 +131,18 @@ function BuyPage() {
         <div className="container mx-auto flex items-center justify-between">
           <p>&copy; 2024 Car Rental. All rights reserved.</p>
           <nav className="flex items-center gap-4">
-            <Link to="/" className="hover:underline hover:-red-600 underline-offset-4">Home</Link>
-            <Link to="/help" className="hover:underline hover:-red-600 underline-offset-4">Help</Link>
+            <Link
+              to="/"
+              className="hover:underline hover:-red-600 underline-offset-4"
+            >
+              Home
+            </Link>
+            <Link
+              to="/help"
+              className="hover:underline hover:-red-600 underline-offset-4"
+            >
+              Help
+            </Link>
           </nav>
         </div>
       </footer>

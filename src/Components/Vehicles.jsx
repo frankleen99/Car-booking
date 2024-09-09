@@ -99,8 +99,7 @@ const Vehicles = () => {
           </select>
 
           <label className="font-bold text-md md:mt-0 lg:mt-0 mt-4 lg:text-2xl xl:text-2xl" htmlFor="Transmission">TRANSMISSION</label>
-          <select className="py-2" onChange={handleCarTransmissionChange}>
-            
+          <select className="py-2" onChange={handleCarTransmissionChange}>            
             <option valu e="">Select Transmission</option>
             {transmission.map(trans => (
               <option key={trans.id} value={trans.transmission}>

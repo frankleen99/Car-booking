@@ -76,14 +76,29 @@ function Invite() {
             <span className="sr-only">Share on Twitter</span>
           </Link>
           <Link to="#">
-            <FaLinkedin className="h-6 w-6" />
-            <span className="sr-only">Share on LinkedIn</span>
-          </Link>
-          <Link to="#">
             <FaWhatsapp className="h-6 -6" />
             <span className="sr-only">Share on WhatsApp</span>
           </Link>
         </div>
+        <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
+        <p className="text-xs text-muted-foreground">
+          &copy; 2024 bestCars Inc. All rights reserved.
+        </p>
+        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
+          <Link
+            to="/"
+            className="text-xs hover:underline hover:-red-600 underline-offset-4"
+          >
+            Home
+          </Link>
+          <Link
+            to="/help"
+            className="text-xs hover:underline underline-offset-4"
+          >
+            Help
+          </Link>
+        </nav>
+      </footer>
       </div>
     </>
   );

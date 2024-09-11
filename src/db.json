@@ -1,0 +1,209 @@
+{
+    "cars": [
+      {
+        "id": 1,
+        "brand": "Ford",
+        "type": "SUV",
+        "transmission": "manual",
+        "year": "2016",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDwTpJAkA4o04jbYBsuE22Q8mdW6Sd0Sjz1A&s",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 2,
+        "brand": "Chevrolet",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2021",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/2020-chevrolet-corvette-stingray-200-1591806516.jpg?crop=0.772xw:0.579xh;0.112xw,0.243xh&resize=1200:*",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 3,
+        "brand": "Audi",
+        "type": "Truck",
+        "transmission": "automatic",
+        "year": "2020",
+        "image": "https://cdn.openart.ai/uploads/image_hYatVRnd_1690172937682_512.webp",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 4,
+        "brand": "Toyota",
+        "type": "Coupe",
+        "transmission": "automatic",
+        "year": "2017",
+        "image": "https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/media/672263/2017-toyota-86-in-depth-model-review-car-and-driver-photo-682287-s-original.jpg?crop=0.841xw:0.688xh;0.0833xw,0.150xh&resize=1200:*",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 5,
+        "brand": "Nissan",
+        "type": "Station wagon",
+        "transmission": "automatic",
+        "year": "2004",
+        "image": "https://img.autoabc.lv/nissan-primera/nissan-primera_2002_Universals_163222704_5.jpg",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 6,
+        "brand": "Jeep",
+        "type": "Jeep",
+        "transmission": "automatic",
+        "year": "2019",
+        "image": "https://cdn.jdpower.com/JDPA_2019-Jeep-Wrangler-Unlimited-Silver-Front-Quarter.jpg",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 7,
+        "brand": "Pagani",
+        "type": "Race car",
+        "transmission": "automatic",
+        "year": "2016",
+        "image": "https://www.topcarrating.com/pagani/2016-pagani-huayra-pearl.jpg",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 8,
+        "brand": "Ferrari",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2024",
+        "image": "https://autotijd.be/images/ferrari/2024/12cilindri/nieuw/ferrari-12cilindri-2024-01.jpg",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 9,
+        "brand": "Acura",
+        "type": "Minivan",
+        "transmission": "manual",
+        "year": "2014",
+        "image": "https://cdn-fastly.autoguide.com/media/2023/06/07/12323077/2019-acura-rdx-review.jpg?size=720x845&nocrop=1",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 10,
+        "brand": "BMW",
+        "type": "Sedan",
+        "transmission": "manual",
+        "year": "2010",
+        "image": "https://imgd-ct.aeplcdn.com/664x415/n/cw/ec/139177/3-series-gran-limousine-exterior-right-front-three-quarter-3.jpeg?isig=0&q=80",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      },
+      {
+        "id": 11,
+        "brand": "Toyota",
+        "type": "Jeep",
+        "transmission": "automatic",
+        "year": "2016",
+        "image": "https://platform.cstatic-images.com/in/v2/stock_photos/c162c697-cb87-45ad-8f5d-f6f4246121c1/9c108ab2-521a-4ec2-9fb5-d804a4dee106.png",
+        "pricePerDay": "$",
+        "pricePerMonth":"$$"
+      }
+    ], 
+    "buyPage" : [
+      {
+        "id": 1,
+        "name": "Toyota Camry 2022",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK48YEEmDAun1G9C6DWksQ9adhDkE3fCb1wQ&s",
+        "price": "$12000"
+      },
+      {
+        "id": 2,
+        "name": "Honda Civic 2021",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/2021-honda-civic-mmp-1-1595005323.jpg",
+        "price": "$13500"
+      },
+      {
+        "id": 3,
+        "name":"Nissan Altima 2020",
+        "image": "https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/3003/",
+        "price": "$18000"
+      },
+      {
+        "id": 4,
+        "name":"Hyundai Sonata 2021",
+        "image": "https://images.pexels.com/photos/12206292/pexels-photo-12206292.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price":"$20000"
+      }
+    ],
+    "RepairPage": [
+      {
+        "id": "1",
+        "image": "https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price":"$49.99"
+      },
+      {
+        "id": "2",
+        "image": "https://images.pexels.com/photos/4022545/pexels-photo-4022545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price":"$199.99"
+      }, 
+      {
+        "id": "3",
+        "image": "https://images.pexels.com/photos/5835363/pexels-photo-5835363.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price":"$29.99"
+      }, 
+      {
+        "id": "4",
+        "image": "https://images.pexels.com/photos/244553/pexels-photo-244553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price":"$29.99"
+      }, 
+      {
+        "id": "5",
+        "image": "",
+        "price":"299.99"
+      }, 
+      {
+        "id": "6",
+        "image": "",
+        "price":"$99.99"
+      }    
+    ],
+    "BestOnes": [
+      {
+        
+        "id": 1,
+        "brand": "Ferrari",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2024",
+        "image": "https://autotijd.be/images/ferrari/2024/12cilindri/nieuw/ferrari-12cilindri-2024-01.jpg",
+        "pricePerDay": "$"      
+      },
+      {
+        "id": 2,
+        "brand": "Lamborhgini",
+        "type": "SUV",
+        "transmission": "automatic",
+        "year": "2023",
+        "image": "https://images.pexels.com/photos/15489297/pexels-photo-15489297/free-photo-of-white-lamborghini-urus.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "id": 3,
+        "brand": "McLaren",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2023",
+        "image": "https://images.pexels.com/photos/14834539/pexels-photo-14834539.jpeg?auto=compress&cs=tinysrgb&w=600"
+      }, 
+      {
+        "id": 4,
+        "brand": "Mercedes AMG",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2023",
+        "image": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=600"
+      }
+    ]  
+  }
+  

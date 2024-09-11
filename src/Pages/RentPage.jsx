@@ -7,7 +7,7 @@ function RentPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const jsonEndpoint = "http://localhost:8000/rentPage";
+    const jsonEndpoint = `http://localhost:8000/rentPage`;
 
     fetch(jsonEndpoint)
       .then((res) => res.json())

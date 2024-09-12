@@ -141,33 +141,27 @@
       {
         "id": "1",
         "image": "https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "price":"$49.99"
+        "price":"$49.99",
+        "name": "Oil change"
       },
       {
         "id": "2",
         "image": "https://images.pexels.com/photos/4022545/pexels-photo-4022545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "price":"$199.99"
+        "price":"$199.99",
+        "name":"Brake change"
       }, 
       {
         "id": "3",
         "image": "https://images.pexels.com/photos/5835363/pexels-photo-5835363.jpeg?auto=compress&cs=tinysrgb&w=600",
-        "price":"$29.99"
+        "price":"$29.99",
+        "name": "Engine servicing"
       }, 
       {
         "id": "4",
         "image": "https://images.pexels.com/photos/244553/pexels-photo-244553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-        "price":"$29.99"
-      }, 
-      {
-        "id": "5",
-        "image": "",
-        "price":"299.99"
-      }, 
-      {
-        "id": "6",
-        "image": "",
-        "price":"$99.99"
-      }    
+        "price":"$29.99",
+        "name":"Wheel change"
+      }   
     ],
     "BestOnes": [
       {

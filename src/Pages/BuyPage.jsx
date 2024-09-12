@@ -6,7 +6,7 @@ function BuyPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const jsonEndpoint = `http://localhost:8000/buyPage`;
+    const jsonEndpoint = "http://localhost:8000/buyPage";
 
     fetch(jsonEndpoint)
       .then((res) => res.json())

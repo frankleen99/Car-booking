@@ -127,7 +127,7 @@
       {
         "id": 3,
         "name":"Nissan Altima 2020",
-        "image": "https://www.iihs.org/cdn-cgi/image/width=636/api/ratings/model-year-images/3003/",
+        "image": "https://di-uploads-pod1.dealerinspire.com/saffordbrownnissansterling/uploads/2024/03/2024-Nissan-Altima-2.5SL-AWD-001-Front-three-quarter-ezgif.com-avif-to-jpg-converter.jpg",
         "price": "$18000"
       },
       {
@@ -137,7 +137,7 @@
         "price":"$20000"
       }
     ],
-    "RepairPage": [
+    "repairPage": [
       {
         "id": "1",
         "image": "https://images.pexels.com/photos/13065690/pexels-photo-13065690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",

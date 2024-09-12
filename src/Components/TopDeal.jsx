@@ -7,7 +7,7 @@ const TopDeal = () => {
 
   useEffect(() => {
     // Replace with your API endpoint
-    const jsonEndpoint = `http://localhost:8000/cars`;
+    const jsonEndpoint = "http://localhost:8000/cars";
 
     fetch(jsonEndpoint)
       .then((res) => res.json())

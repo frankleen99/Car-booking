@@ -9,7 +9,7 @@ function BestOnes() {
   const [best, setBest] = useState([]);
 
   useEffect(()=> {
-    fetch(`http://localhost:8000/BestOnes`)
+    fetch("http://localhost:8000/BestOnes")
     .then((res) => res.json())
     .then((data)=>{
       setBest(data)

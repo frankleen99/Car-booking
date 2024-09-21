@@ -164,8 +164,7 @@
       }   
     ],
     "BestOnes": [
-      {
-        
+      {     
         "id": 1,
         "brand": "Ferrari",
         "type": "Sports car",
@@ -198,6 +197,40 @@
         "year": "2023",
         "image": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=600"
       }
-    ]  
+    ],
+    "rentPage": [
+      {
+        "id": 1,
+        "brand": "Ferrari",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2024",
+        "image": "https://autotijd.be/images/ferrari/2024/12cilindri/nieuw/ferrari-12cilindri-2024-01.jpg"
+      },
+      {
+        "id": 4,
+        "brand": "Mercedes AMG",
+        "type": "Sports car",
+        "transmission": "automatic",
+        "year": "2023",
+        "image": "https://images.pexels.com/photos/2365572/pexels-photo-2365572.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "id": 2,
+        "brand": "Lamborhgini",
+        "type": "SUV",
+        "transmission": "automatic",
+        "year": "2023",
+        "image": "https://images.pexels.com/photos/15489297/pexels-photo-15489297/free-photo-of-white-lamborghini-urus.jpeg?auto=compress&cs=tinysrgb&w=600"
+      },
+      {
+        "id": 7,
+        "brand": "Pagani",
+        "type": "Race car",
+        "transmission": "automatic",
+        "year": "2016",
+        "image": "https://www.topcarrating.com/pagani/2016-pagani-huayra-pearl.jpg"  
+      }
+    ] 
   }
   

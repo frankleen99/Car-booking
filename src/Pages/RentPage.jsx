@@ -58,11 +58,15 @@ function RentPage() {
                         <div key={index} className="bg-muted p-4 rounded-lg">
                           <img
                             src={car.image || "/placeholder.svg"}
-                            alt={car.name}
+                            alt={car.brand}
                             className="rounded-lg mb-4"
                           />
                           <h3 className="text-lg font-medium mb-2">
-                            {car.name}
+                            {car.brand}
+                            <br />
+                            <p>{car.type}</p>
+                            <p>{car.transmission}</p>
+                            <p>{car.year}</p>
                           </h3>
                           <p className="text-muted-foreground mb-4">
                             {car.price}
@@ -86,7 +90,11 @@ function RentPage() {
                             className="rounded-lg mb-4"
                           />
                           <h3 className="text-lg font-medium mb-2">
-                            {car.name}
+                            {car.brand}
+                            <br />
+                            <p>{car.type}</p>
+                            <p>{car.transmission}</p>
+                            <p>{car.year}</p>
                           </h3>
                           <p className="text-muted-foreground mb-4">
                             {car.price}

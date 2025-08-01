@@ -1,12 +1,10 @@
-import React from "react";
-
 function Header() {
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <div className="max-h-[500px] relative">
       <img
         className="w-full max-h-[500px] object-cover bg-contain"
-        src="./src/images/pexels-pixabay-210019.jpg"
+        src="./src/images/heroImage.jpg"
         alt="car image"
       />
         {/* Overlay*/}

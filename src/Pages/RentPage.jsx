@@ -110,23 +110,20 @@ function RentPage() {
     }
   };
 
-  const filteredAndSortedCars = cars
+  const filteredCars = cars
     .filter((car) => filterBy === "all" || car.type === filterBy)
     .sort((a, b) => {
-      switch (sortBy) {
-        case "price":
-          const aPrice = parseFloat((a.dailyRate || "$0").replace(/[$,]/g, ""));
-          const bPrice = parseFloat((b.dailyRate || "$0").replace(/[$,]/g, ""));
-          return aPrice - bPrice;
-        case "type":
-          return (a.type || "").localeCompare(b.type || "");
-        default:
-          return (a.name || "").localeCompare(b.name || "");
+      if (sortBy === "price") {
+        return (
+          parseFloat(a.dailyRate.replace("$", "")) -
+          parseFloat(b.dailyRate.replace("$", ""))
+        );
       }
+      return (a[sortBy] || "").localeCompare(b[sortBy] || "");
     });
 
-  const featuredCars = filteredAndSortedCars.slice(0, 2);
-  const allCars = filteredAndSortedCars.slice(2);
+  const featuredCars = filteredCars.slice(0, 2);
+  const allCars = filteredCars.slice(2);
 
   if (loading) {
     return (
@@ -252,7 +249,7 @@ function RentPage() {
                   Available Rental Cars
                 </h2>
                 <p className="text-gray-600">
-                  {filteredAndSortedCars.length} vehicles available • Showing{" "}
+                  {filteredCars.length} vehicles available • Showing{" "}
                   {rentalDuration} rates
                 </p>
               </div>
@@ -409,7 +406,7 @@ function RentPage() {
                 )}
 
                 {/* No Cars Message */}
-                {filteredAndSortedCars.length === 0 && (
+                {filteredCars.length === 0 && (
                   <div className="text-center py-12">
                     <div className="text-6xl mb-4">🚗</div>
                     <h3 className="text-2xl font-bold text-gray-800 mb-2">

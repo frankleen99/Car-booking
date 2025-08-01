@@ -1,10 +1,11 @@
+import carImage from "../images/heroImage.jpg"
 function Header() {
   return (
     <div className="max-w-[1640px] mx-auto p-4">
       <div className="max-h-[500px] relative">
       <img
         className="w-full max-h-[500px] object-cover bg-contain"
-        src="./src/images/heroImage.jpg"
+        src={carImage}
         alt="car image"
       />
         {/* Overlay*/}
